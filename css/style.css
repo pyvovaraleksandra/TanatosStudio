@@ -12,6 +12,16 @@ h3 {
 blockquote {
 	border-left: none;
 }
+.submit-input:focus, .submit-input:active, .submit-input:active:focus,
+.contact-btn:focus, .contact-btn:active, .contact-btn:active:focus
+
+ {
+	background-color: #f7600e;
+	color: #fff;
+	border-color: #f7600e;
+	outline: none;
+	box-shadow: none;
+}
 .form-group input {
 	height: 50px;
 }
