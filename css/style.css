@@ -15,7 +15,7 @@ blockquote {
 .form-group input {
 	height: 50px;
 }
-a:hover {
+a:hover, a:focus  {
 	color: #fff;
 	text-decoration: none;
 }
@@ -240,7 +240,6 @@ header {
 	color: #f7600e;
 }
 .works-portfolio-block:hover .work-overlay {
-	/*display: block;*/
 	opacity: 1;
 }
 .works-button {
@@ -250,11 +249,21 @@ header {
 	text-transform: uppercase;
 	color: #3b434c;
 }
+.works-button:focus {
+	color: #3b434c;
+	text-decoration: none;
+}
 .works-button-wraper {
 	margin: 100px 0;
 }
 .works-button:hover {
 	color: #3b434c;
+}
+.works-portfolio-more {
+	display: none;
+}
+.works-portfolio-more.show {
+	display: block;
 }
 
 
