@@ -9,4 +9,11 @@ $(document).ready(function(){
 		else 
 			$(this).text('Show more');
 	});
+
+	$('.hamburger').on('click', function(e){
+		e.preventDefault();
+	
+		$('.popup-menu').toggleClass('show');
+		$('header').toggleClass('bg-dark');
+	});
 });

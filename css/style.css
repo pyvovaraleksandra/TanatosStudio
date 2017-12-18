@@ -106,7 +106,29 @@ header {
 .hamburger-third-line {
 	top: 28px;
 }
-
+/* popup menu */
+.popup-menu.show {
+	margin-top: 110px;
+}
+.menu-item {
+	font: 600 3.5rem/70px 'Open Sans';
+	text-transform: uppercase;
+	color: #fff;
+}
+.last-item {
+	padding-bottom: 35px;
+	border-bottom: 2px solid #f7600e;
+}
+.menu-item:hover {
+	color: #f7600e;
+}
+.menu-links {
+	margin-top: 70px;
+	margin-bottom: 427%;
+}
+.bg-dark {
+	background: rgba(59, 67, 76, 0.95);
+}
 /* MAIN */ 
 .main-content {
 	padding-top: 247px;
