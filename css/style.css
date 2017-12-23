@@ -77,7 +77,10 @@ header {
 	margin-top: 14px;
 }
 .popup-menu {
-	display: none;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -13%);
 }
 .text-menu {
 	font: 400 1.6rem/16.8px 'Open Sans';
@@ -107,8 +110,18 @@ header {
 	top: 28px;
 }
 /* popup menu */
-.popup-menu.show {
-	margin-top: 110px;
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+    right: 0;
+	background-color: rgba(59, 67, 76, 0.95);
+	z-index: 90;
+	display: none;
+}
+.overlay.active {
+	display: block;
 }
 .menu-item {
 	font: 600 3.5rem/70px 'Open Sans';
@@ -126,9 +139,31 @@ header {
 	margin-top: 70px;
 	margin-bottom: 427%;
 }
-.bg-dark {
-	background: rgba(59, 67, 76, 0.95);
+.menu-close {
+    display: block;
+    position: absolute;
+    left: 84%;
+    top: 5%;
+    width: 25px;
+    height: 20px;
 }
+.close-line {
+	position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    top: 9px;
+}
+.menu-close:hover .close-line {
+	background-color: #f7600e;
+}
+.close-first-line {
+	transform: rotate(45deg);
+}
+.close-second-line {
+	transform: rotate(-45deg);
+}
+
 /* MAIN */ 
 .main-content {
 	padding-top: 247px;
@@ -393,6 +428,7 @@ header {
 	display: block;
 	width: 0%;
 	height: 5px;
+	border-radius: 6px;
 	margin: 0 auto;
 	opacity: 0;
 	background-color: #f7600e;

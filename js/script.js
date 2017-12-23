@@ -10,10 +10,23 @@ $(document).ready(function(){
 			$(this).text('Show more');
 	});
 
+	// popup menu
 	$('.hamburger').on('click', function(e){
 		e.preventDefault();
-	
-		$('.popup-menu').toggleClass('show');
-		$('header').toggleClass('bg-dark');
+		
+		$('.overlay').addClass('active');
+		// click on overlay
+		// $('.overlay').on('click', function() {
+		// 	$(this).removeClass('active');
+		// }).find('.popup-menu').click(function(e) {
+		// 	e.stopPropagation();
+		// })
+		$('.menu-close').on('click', function(e) {
+			e.preventDefault();
+			$(this).closest('.overlay').removeClass('active');
+		})
+
+
+
 	});
 });
