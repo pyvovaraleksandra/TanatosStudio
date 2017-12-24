@@ -7,9 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,800" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style.css">	
 </head>
 <body>
 	<header>
@@ -19,40 +17,44 @@
 			</div>
 			<div class="menu row pull-right col-lg-6 col-md-6 col-sm-6 col-xs-6">
 				<div class="pull-right">
-					<span class="pull-left text-menu">Menu</span>
-					<a href="">
-						<div class="hamburger pull-right">
+					<span class="pull-left text-menu">Menu</span>			
+					<div class="hamburger pull-right"  data-toggle="modal" data-target="#myModal">
 							<span class="hamburger-line hamburger-first-line"></span>
 							<span class="hamburger-line hamburger-second-line"></span>
 							<span class="hamburger-line hamburger-third-line"></span>
 						</div>
-					</a>
 				</div>					
 			</div>
-			<div class="overlay">
-				<nav class="popup-menu">
-					<ul class="list-unstyled text-center">
-						<li><a href="" class="menu-item">Home</a></li>
-						<li><a href="" class="menu-item">About Us</a></li>
-						<li><a href="" class="menu-item">Services</a></li>
-						<li><a href="" class="menu-item">Our works</a></li>
-						<li><a href="" class="menu-item last-item">Contact</a></li>
-					</ul>
-					<div class="menu-links text-center">
-						<a href="#" class="contact-link contact-link-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="#" class="contact-link contact-link-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a href="#" class="contact-link contact-link-google"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						<a href="#" class="contact-link contact-link-dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-						<a href="#" class="contact-link contact-link-behance no-margin-right"><i class="fa fa-behance" aria-hidden="true"></i></a>
-					</div>
-				</nav>
-				<a href="" class="menu-close">
-					<span class="close-line close-first-line"></span>
-					<span class="close-line close-second-line"></span>
-				</a>
-			</div>
-		</div>
 	</header>
+
+
+	<div class="modal fade menu-fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog menu-dialog" role="document">
+	    <div class="modal-content menu-content">
+	    	<button type="button" class="close menu-close" data-dismiss="modal" aria-label="Close">
+	    		<span class="close-line close-first-line"></span>
+				<span class="close-line close-second-line"></span>
+	    	</button>
+	    	<nav class="popup-menu">
+				<ul class="list-unstyled text-center">
+					<li><a href="" class="menu-item">Home</a></li>
+					<li><a href="" class="menu-item">About Us</a></li>
+					<li><a href="" class="menu-item">Services</a></li>
+					<li><a href="" class="menu-item">Our works</a></li>
+					<li><a href="" class="menu-item last-item">Contact</a></li>
+				</ul>
+				<div class="menu-links text-center">
+					<a href="#" class="contact-link contact-link-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#" class="contact-link contact-link-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#" class="contact-link contact-link-google"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					<a href="#" class="contact-link contact-link-dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+					<a href="#" class="contact-link contact-link-behance no-margin-right"><i class="fa fa-behance" aria-hidden="true"></i></a>
+				</div>
+			</nav>
+	    </div>
+	  </div>
+	</div>
+
 	<main class="main">
 		<div class="container">
 			<div class="row">
@@ -119,6 +121,7 @@
 				</div>
 			</form>
 		</div>
+</div>
 	</section>
 	<section>
 		<div class="container">
@@ -502,5 +505,6 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

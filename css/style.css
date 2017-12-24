@@ -76,12 +76,6 @@ header {
 	padding-left: 30px;
 	margin-top: 14px;
 }
-.popup-menu {
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -13%);
-}
 .text-menu {
 	font: 400 1.6rem/16.8px 'Open Sans';
 	color: #fff;
@@ -92,6 +86,13 @@ header {
     width: 41px;
     height: 50px;
     padding-left: 20px;
+
+}
+.hamburger:hover {
+	cursor: pointer;
+}
+.hamburger:hover .hamburger-line {
+	background-color: #f7600e;
 }
 .hamburger-line {
 	position: absolute;
@@ -99,6 +100,7 @@ header {
     height: 2px;
     margin: 4px 0;
     background-color: #fff;
+    transition: 0.5s;
 }
 .hamburger-first-line {
 	top: 12px;
@@ -110,23 +112,22 @@ header {
 	top: 28px;
 }
 /* popup menu */
-.overlay {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-    right: 0;
-	background-color: rgba(59, 67, 76, 0.95);
-	z-index: 90;
-	display: none;
+.menu-dialog {
+	margin-top: 100px;
 }
-.overlay.active {
-	display: block;
+.menu-content {
+	background: none;
+    box-shadow: none;
+    border: none;
+}
+.menu-fade {
+	background-color: rgba(59, 67, 76, 0.9);
 }
 .menu-item {
 	font: 600 3.5rem/70px 'Open Sans';
 	text-transform: uppercase;
 	color: #fff;
+	transition: 0.5s;
 }
 .last-item {
 	padding-bottom: 35px;
@@ -140,12 +141,18 @@ header {
 	margin-bottom: 427%;
 }
 .menu-close {
-    display: block;
     position: absolute;
-    left: 84%;
-    top: 5%;
-    width: 25px;
+    left: 135%;
+    top: -14%;
+    width: 45px;
     height: 20px;
+    opacity: 1;
+}
+.menu-close:hover {
+	opacity: 1;
+}
+.menu-close:focus {
+	outline: none;
 }
 .close-line {
 	position: absolute;
@@ -153,6 +160,7 @@ header {
     height: 2px;
     background-color: #fff;
     top: 9px;
+    transition: 0.5s;
 }
 .menu-close:hover .close-line {
 	background-color: #f7600e;

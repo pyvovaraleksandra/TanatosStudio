@@ -11,22 +11,19 @@ $(document).ready(function(){
 	});
 
 	// popup menu
-	$('.hamburger').on('click', function(e){
-		e.preventDefault();
+	// $('.hamburger').on('click', function(e){
+		// e.preventDefault();
 		
-		$('.overlay').addClass('active');
+		// $('.overlay').addClass('active');
 		// click on overlay
 		// $('.overlay').on('click', function() {
 		// 	$(this).removeClass('active');
 		// }).find('.popup-menu').click(function(e) {
 		// 	e.stopPropagation();
 		// })
-		$('.menu-close').on('click', function(e) {
-			e.preventDefault();
-			$(this).closest('.overlay').removeClass('active');
-		})
-
-
-
-	});
+		// $('.menu-close').on('click', function(e) {
+		// 	e.preventDefault();
+		// 	$(this).closest('.overlay').removeClass('active');
+		// });
+	// });
 });
